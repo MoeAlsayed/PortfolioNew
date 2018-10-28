@@ -1,0 +1,57 @@
+img.Gallery {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 
+      
+       [clip-path coordinates]
+      
+        --A-F--
+       B|/   \|E    coord.
+        |\   /|       A(a/w, 0)
+        --C-D--       B(0, 50%)
+                      C(a/w, 100%)
+                      D(100% - a/w, 100%)
+                      E(100%, 50%)
+                      F(100% - a/w, 0)
+                    where a/w = 0.24999999999
+      */
+    --aw: 24.9999999%;
+    clip-path: polygon(var(--aw) 0,
+      0 50%,
+      var(--aw) 100%,
+      calc(100% - var(--aw)) 100%,
+      100% 50%,
+      calc(100% - var(--aw)) 0);
+  }
+
+  @media only screen and (max-width: 600px) {
+    li.Gallery {
+      position: static;
+    }
+    ul.Gallery{
+  
+    }
+    .bodyGallery {
+  
+    }
+  }
+
+  .contact-section .social a {
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    background: rgba(0, 0, 0, 0.22);
+    border-radius: 100%;
+    line-height: 3rem;
+    color: rgba(255, 255, 255, .3);
+    margin-bottom: 3rem;
+}
+
+.bg-gradient{
+  background-color: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%) !important;
+}
+footer{
+  margin-top: 3rem;
+}

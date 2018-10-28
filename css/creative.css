@@ -58,7 +58,7 @@ h6 {
 }
 
 .bg-dark {
-  background-color: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%) !important;
+  background-color: #212529 !important;
 }
 
 .text-faded {
