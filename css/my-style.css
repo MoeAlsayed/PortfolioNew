@@ -1,9 +1,9 @@
 img.Gallery {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* 
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 
       
        [clip-path coordinates]
       
@@ -17,41 +17,122 @@ img.Gallery {
                       F(100% - a/w, 0)
                     where a/w = 0.24999999999
       */
-    --aw: 24.9999999%;
-    clip-path: polygon(var(--aw) 0,
-      0 50%,
-      var(--aw) 100%,
-      calc(100% - var(--aw)) 100%,
-      100% 50%,
-      calc(100% - var(--aw)) 0);
-  }
-
-  @media only screen and (max-width: 600px) {
-    li.Gallery {
-      position: static;
-    }
-    ul.Gallery{
-  
-    }
-    .bodyGallery {
-  
-    }
-  }
-
-  .contact-section .social a {
-    text-align: center;
-    height: 3rem;
-    width: 3rem;
-    background: rgba(0, 0, 0, 0.22);
-    border-radius: 100%;
-    line-height: 3rem;
-    color: rgba(255, 255, 255, .3);
-    margin-bottom: 3rem;
+  --aw: 24.9999999%;
+  clip-path: polygon(var(--aw) 0,
+    0 50%,
+    var(--aw) 100%,
+    calc(100% - var(--aw)) 100%,
+    100% 50%,
+    calc(100% - var(--aw)) 0);
 }
 
-.bg-gradient{
+@media only screen and (max-width: 600px) {
+  li.Gallery {
+    position: static;
+  }
+
+  ul.Gallery {}
+
+  .bodyGallery {}
+}
+
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(0, 0, 0, 0.22);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, .3);
+  margin-bottom: 3rem;
+}
+
+.bg-gradient {
   background-color: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%) !important;
 }
-footer{
+
+.intro {
+  padding-left: 13% !important;
+}
+
+footer {
   margin-top: 3rem;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%)
+}
+
+@keyframes typeWriter {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* @keyframes blinkTextCursor {
+  form{
+    
+  }
+} */
+
+.line-1 {
+  animation: typeWriter 2s steps(80) 5s 1 normal both;
+}
+
+.line-2 {
+  animation: typeWriter 2s steps(80) 3s 1 normal both;
+}
+
+.line-3 {
+  animation: typeWriter 2s steps(80) 1s 1 normal both;
+}
+
+.arrow {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.parentArrow {
+  position: relative;
+  animation: ArrowDown1 2s linear infinite;
+}
+
+@keyframes ArrowDown1 {
+  0% {
+    top: 0%;
+  }
+  12.5% {
+    top: 3.5%;
+  }
+
+  25% {
+    top: 7%;
+  }
+  37.5% {
+    top: 3.5%;
+  }
+  50% {
+    top: 0;
+  }
+  62.5% {
+    top: -3.5%;
+  }
+
+  75% {
+    top: -7%;
+  }
+  87.5% {
+    top: -3.5%;
+  }
+  100% {
+    top: 0;
+  }
 }
