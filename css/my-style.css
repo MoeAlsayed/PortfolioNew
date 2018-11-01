@@ -31,9 +31,11 @@ img.Gallery {
     position: static;
   }
 
-  ul.Gallery {}
-
-  .bodyGallery {}
+  .line-1,
+  .line-2,
+  .line-3 {
+    font-size: 1rem
+  }
 }
 
 .contact-section .social a {
@@ -52,7 +54,7 @@ img.Gallery {
 }
 
 .intro {
-  padding-left: 13% !important;
+  padding-left: 10% !important;
 }
 
 footer {
@@ -77,14 +79,8 @@ footer {
   }
 }
 
-/* @keyframes blinkTextCursor {
-  form{
-    
-  }
-} */
-
 .line-1 {
-  animation: typeWriter 2s steps(80) 5s 1 normal both;
+  animation: typeWriter 2s steps(80) 4s 1 normal both;
 }
 
 .line-2 {
@@ -109,6 +105,7 @@ footer {
   0% {
     top: 0%;
   }
+
   12.5% {
     top: 3.5%;
   }
@@ -116,12 +113,15 @@ footer {
   25% {
     top: 7%;
   }
+
   37.5% {
     top: 3.5%;
   }
+
   50% {
     top: 0;
   }
+
   62.5% {
     top: -3.5%;
   }
@@ -129,10 +129,53 @@ footer {
   75% {
     top: -7%;
   }
+
   87.5% {
     top: -3.5%;
   }
+
   100% {
     top: 0;
   }
+}
+
+.background {
+  background-image: url("../img/photo-1483706571191-85c0c76b1947.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.bodyBackground {
+  /*   background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, .9)), to(rgba(22, 22, 22, .8)));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(22, 22, 22)), color-stop(0.75, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+
+  background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%);
+  background-image: linear-gradient(rgb(22, 22, 22) 0px, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial; */
+
+  /* background-image: url("../img/bodyBack/keyboard_2880x1800.png")!important */
+
+  background-color: #0000001c;
+}
+
+.Mrbox {
+  margin: 10px;
 }
