@@ -27,6 +27,12 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .myImg {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%
+  }
+
   li.Gallery {
     position: static;
   }
@@ -37,10 +43,12 @@
 
   .line-1,
   .line-2,
-  .line-3 {
+  .line-3,
+    {
     font-size: 1rem
   }
 }
+
 
 .contact-section .social a {
   text-align: center;
@@ -179,11 +187,6 @@ footer {
 
   background-color: #0000001c;
 }
-
-.Mrbox {
-  margin: 10px;
-}
-
 
 .text {
   list-style: none;
