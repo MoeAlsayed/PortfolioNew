@@ -26,7 +26,7 @@
     calc(100% - var(--aw)) 0);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .myImg {
     padding: 0 !important;
     margin: 0 !important;
@@ -42,10 +42,16 @@
   }
 
   .line-1,
-  .line-2,
-  .line-3,
-    {
-    font-size: 1rem
+  .line-3 {
+    font-size: 1.3rem !important
+  }
+
+  .line-2 {
+    font-size: 1em
+  }
+
+  .logo {
+    font-size: 1em !important
   }
 }
 
@@ -103,14 +109,14 @@ footer {
   animation: typeWriter 2s steps(80) 1s 1 normal both;
 }
 
-.arrow {
-  font-size: 2em;
-  color: #ffffff;
-}
-
 .parentArrow {
   position: relative;
   animation: ArrowDown1 2s linear infinite;
+}
+
+.arrow {
+  font-size: 2em;
+  color: #ffffff;
 }
 
 @keyframes ArrowDown1 {
@@ -158,36 +164,6 @@ footer {
   height: 100vh;
 }
 
-.bodyBackground {
-  /*   background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, .9)), to(rgba(22, 22, 22, .8)));
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(22, 22, 22)), color-stop(0.75, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
-  background-position-x: initial;
-  background-position-y: initial;
-  background-size: initial;
-  background-repeat-x: initial;
-  background-repeat-y: initial;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: initial;
-
-  background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%);
-  background-image: linear-gradient(rgb(22, 22, 22) 0px, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
-  background-position-x: initial;
-  background-position-y: initial;
-  background-size: initial;
-  background-repeat-x: initial;
-  background-repeat-y: initial;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: initial; */
-
-  /* background-image: url("../img/bodyBack/keyboard_2880x1800.png")!important */
-
-  background-color: #0000001c;
-}
-
 .text {
   list-style: none;
   border-bottom: 0;
@@ -201,4 +177,23 @@ footer {
 .text.hidden .ghost {
   opacity: 0;
   max-width: 0;
+}
+
+.MyPicture {
+  background-image: url("../img/MyPicture.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+
+}
+
+.media-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-center h4 {
+  max-width: 30em;
 }

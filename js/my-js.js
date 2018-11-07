@@ -1,12 +1,12 @@
-var text=document.querySelector(".text");
-document.addEventListener("scroll",function(){
- if(document.body.scrollTop>100 ||document.documentElement.scrollTop>100){
-    text.classList.remove("hidden");
-    }else{
-      text.classList.add("hidden");
+var text = document.querySelector(".text");
+document.addEventListener("scroll", function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        text.classList.remove("hidden");
+    } else {
+        text.classList.add("hidden");
     }
-      // text.classList.remove("hidden");
-   
+    // text.classList.remove("hidden");
+
 })
 
 /* $(function () {
