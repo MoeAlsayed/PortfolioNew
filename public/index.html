@@ -327,18 +327,22 @@
   <section id="contact" class="signup-section pt-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-9 col-lg-8 mx-auto text-center">
+        <div class="col-md-8 col-lg-8 mx-auto text-center">
 
           <i class="far fa-paper-plane fa-2x mb-2 "></i>
           <h2 class=" mb-5">Feel free to send me message for more information using form or by email. </h2>
 
-          <form class="form-inline d-flex" action="mailto:mohamad.alsayed93@gmail.com">
-            <input type="message" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputMessage"
+          <form class="form-inline d-flex" method="post" action="/email">
+            <input type="text" class="form-control flex-fill mr-1 mr-ms-2 mb-3 mb-sm-0 w-40" id="inputName" name="name"
+              placeholder="Your Name">
+            <input type="email" class="form-control flex-fill mr-1 mr-sm-2 mb-3 mb-sm-0 w-40" id="inputEmail" name="mail"
+              placeholder="Your Email">
+            <input type="message" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputMessage" name="message"
               placeholder="I'll be Happy for Your message Here...">
             <button type="submit" class="btn btn-primary m-3 mx-auto">Send</button>
           </form>
         </div>
-        <div class="col-md-3 col-lg-4 mx-auto text-center p-0">
+        <div class="col-md-4 col-lg-4 mx-auto text-center p-0 ">
           <img src="./img/frame (2).png" alt="">
         </div>
       </div>

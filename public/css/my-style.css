@@ -197,3 +197,10 @@ footer {
 .media-center h4 {
   max-width: 30em;
 }
+
+.frame {
+  background-image: url("../img/frame (2).png");
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+}
