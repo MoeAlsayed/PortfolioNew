@@ -1,3 +1,3 @@
 # PortfolioNew
 
-https://moealsayed.github.io/PortfolioNew/public/
+https://moealsayed.github.io/MyPortfolio/public/
