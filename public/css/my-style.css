@@ -208,26 +208,51 @@ footer {
 .thanksBody {
   height: 100vh;
   margin: 0;
-  display: flex;
+  /*   display: flex; */
 }
 
-.thankSection {
+/* .thankSection {
   background-image: url("../img/thank\ .gif");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+
   height: 80vh;
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   margin: auto;
-}
+} */
 
-.thankSection a {
-  margin-bottom: 17%;
+.thanksBody a {
+  /* margin-bottom: 17%; */
   text-decoration: none;
   color: #212529;
   background: #fff;
-  padding: 1% 2%;
+  padding: 8px 16px;
   border-radius: 5px;
+}
+
+.thanksBody img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 5px 30px -6px rgba(22, 22, 22, .2);
+  border-radius: 16px
+}
+
+.thankSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #694a79;
+}
+
+.thankSection a {
+  z-index: 100;
+  position: relative;
+  top: 250px;
 }
