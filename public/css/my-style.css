@@ -204,3 +204,30 @@ footer {
   background-position: center;
   min-height: 70vh;
 }
+
+.thanksBody {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+.thankSection {
+  background-image: url("../img/thank\ .gif");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: auto;
+}
+
+.thankSection a {
+  margin-bottom: 17%;
+  text-decoration: none;
+  color: #212529;
+  background: #fff;
+  padding: 1% 2%;
+  border-radius: 5px;
+}

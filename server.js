@@ -1,5 +1,6 @@
 const express = require("express")
 const path = require("path");
+const fs = require("fs");
 const app = express()
 const mongoose = require("mongoose")
 const bodyparser = require("body-parser")
@@ -57,9 +58,17 @@ app.post("/email", async (req, res, next) => {
             res.status(304).json("not done");
         } else {
             console.log("the info is ", info);
-            res.sendFile(path.join(__dirname + '/public/index.html'));
+            /* res.sendFile(path.join(__dirname + '/public/thank.html')); */
+            // res.send('your Email was sent')
+
+            fs.readFile(path.join(__dirname + '/public/thank.html'), 'utf-8', (err, data) => {
+                console.log(err);
+
+                //let html = Jtringify(data) SON.s
+                res.send(data)
+            })
         }
-    });
+    })
 })
 
 
