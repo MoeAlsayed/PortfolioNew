@@ -21,3 +21,7 @@ document.addEventListener("scroll", function () {
         }
     });
 }); */
+
+function openLink(link){
+    window.location.href = link;
+  }

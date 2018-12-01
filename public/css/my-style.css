@@ -198,12 +198,12 @@ footer {
   max-width: 30em;
 }
 
-.frame {
+/* .frame {
   background-image: url("../img/frame (2).png");
   background-size: cover;
   background-position: center;
   min-height: 70vh;
-}
+} */
 
 .thanksBody {
   height: 100vh;
@@ -255,4 +255,20 @@ footer {
   z-index: 100;
   position: relative;
   top: 250px;
+}
+
+.project-name {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-name div {
+  cursor: pointer;
+  font-size: 1rem;
+  background: #ccc;
+  color: #343a40;
+  width: 30%;
+  padding: 2% 0;
+  border-radius: 5px;
+  z-index: 10;
 }
