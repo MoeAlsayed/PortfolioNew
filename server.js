@@ -45,9 +45,9 @@ app.post("/email", async (req, res, next) => {
         subject: `New E-mail From "${newMail.mail}"`,
         text: newMail.message,
         html: `<div style="border-top: 0.5px solid #ccc; padding: 2%;">
-    <p style="font-size:1.5em;">" <strong style="color: skyblue;">${
+    <p style="font-size:1.5em;"> <strong style="color: skyblue;">${
       newMail.name
-    } </strong>" Has Sent You :</p>
+    } </strong> Has Sent You from ${newMail.mail} :</p>
     <p style="font-size:1.3em;">${html}</p>
     </div>`
     };
