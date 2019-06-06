@@ -40,6 +40,9 @@
 
 <body id="page-top">
 
+  <!-- Header -->
+  
+  <header>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
     <div class="container-fluid">
@@ -71,9 +74,9 @@
     </div>
   </nav>
 
-  <!-- Header -->
+</header>
 
-  <header class="background text-left text-white d-flex">
+  <section class="background text-left text-white d-flex"> 
     <div class="container-fluid intro my-auto">
       <div class="row">
         <div class="col-lg-10">
@@ -93,8 +96,8 @@
         </div>
       </div>
     </div>
-  </header>
-
+  </section>
+  
   <!-- About section -->
 
   <section class="bg-dark" id="about" style="padding:0px">
@@ -135,7 +138,7 @@
             that work on all devices: smartphones, tablets,
             laptops
             and desktops. Whether it is small personal site or a big project I use the newest technologies like<samp><code>
-                HTML5, CSS3, Sass/ Scss, JavaScript, NodeJs, mongoDB, mongoose, ReactJs, Redux, jQuery, Bootstrap,
+                HTML5, CSS3, Sass/ Scss, JavaScript, TypeScript, Angular, ReactJs NodeJs, mongoDB, mongoose, Redux, jQuery, Bootstrap,
                 webpack, </code>and more other.</samp></h4>
         </div>
       </div>
@@ -197,8 +200,8 @@
               </a>
             </figure>
             <figure class="skills-slide">
-              <a href="https://survivejs.com/webpack/what-is-webpack/">
-                <img class="logo" src="https://webpack.js.org/e0b5805d423a4ec9473ee315250968b2.svg" alt="webpack logo">
+              <a href="https://www.sitepoint.com/angular-introduction/">
+                <img class="logo" src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular logo">
               </a>
             </figure>
           </div>
@@ -215,120 +218,110 @@
   <section class="pb-5 pt-0" id="portfolio">
     <div class="container-fluid p-0">
       <div class="row no-gutters popup-gallery">
-        <div class="col-lg-4 col-sm-6">
+        <!-- project1 -->
+        <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/portfolio/thumbnails/activity-feed_.png">
             <img class="img-fluid Gallery" src="img/portfolio/thumbnails/activity-feed_.png" alt="">
             <div class="portfolio-box-caption Gallery">
               <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Category
+                <div class="project-category">
+                  FEED List HTML & CSS
                 </div>
                 <div class="project-name">
                   <div onclick="openLink('https://github.com/MoeAlsayed/Html-Css-Projects/tree/master/ex2')">
                     View Github
-                  </div>
-                  <div onclick="openLink('https://github.com/MoeAlsayed/Html-Css-Projects/tree/master/ex2')">
-                    View Online
                   </div>
                 </div>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <!-- project2 -->
+        <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/portfolio/thumbnails/Exercise1.png">
             <img class="img-fluid Gallery" src="img/portfolio/thumbnails/Exercise1.png" alt="">
             <div class="portfolio-box-caption Gallery">
               <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Category
+                <div class="project-category">
+                  sign Up page HTML & CSS
                 </div>
                 <div class="project-name">
                   <div onclick="openLink('https://github.com/MoeAlsayed/Html-Css-Projects/tree/master/ex9')">
                     View Github
-                  </div>
-                  <div onclick="openLink('https://github.com/MoeAlsayed/Html-Css-Projects/tree/master/ex9')">
-                    View Online
                   </div>
                 </div>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <!-- project3 -->
+        <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/portfolio/thumbnails/Exercise2.jpg">
             <img class="img-fluid Gallery" src="img/portfolio/thumbnails/Exercise2.jpg" alt="">
             <div class="portfolio-box-caption Gallery">
               <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Category
+                <div class="project-category">
+                  Adventures HTML & CSS
                 </div>
                 <div class="project-name">
                   <div onclick="openLink('https://github.com/MoeAlsayed/')">
                     View Github
-                  </div>
-                  <div onclick="openLink('https://github.com/MoeAlsayed/')">
-                    View Online
                   </div>
                 </div>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <!-- project4 -->
+        <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/portfolio/thumbnails/Exercise5.jpeg">
             <img class="img-fluid Gallery" src="img/portfolio/thumbnails/Exercise5.jpeg" alt="">
             <div class="portfolio-box-caption Gallery">
               <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Category
+                <div class="project-category">
+                  Charming & Very Spacious HTML & CSS
                 </div>
                 <div class="project-name">
                   <div onclick="openLink('https://github.com/MoeAlsayed/')">
                     View Github
                   </div>
-                  <div onclick="openLink('https://github.com/MoeAlsayed/')">
-                    View Online
-                  </div>
                 </div>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/thumbnails/appLoads.png">
-            <img class="img-fluid Gallery" src="img/portfolio/thumbnails/appLoads.png" alt="">
-            <div class="portfolio-box-caption Gallery">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-center p-4">
-
-                  Podcast product desgin : A Project Based On React & Reactstrap & Scss. Podcast web site
-                </div>
-                <div class="project-name">
-                  <div onclick="openLink('https://github.com/MoeAlsayed/exerciseFullstack-')">
-                    View in Github
+        <!-- project5 -->
+        <div class="col-lg-3 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/thumbnails/Exercise9.jpg">
+              <img class="img-fluid Gallery" src="img/portfolio/thumbnails/Exercise9.jpg" alt="">
+              <div class="portfolio-box-caption Gallery">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-center p-4">
+                    Burning Desire HTML & CSS
                   </div>
-                  <div onclick="openLink('https://fullstak-development.herokuapp.com/')">
-                    View Online
+                  <div class="project-name">
+                    <div onclick="openLink('https://github.com/MoeAlsayed/Html-Css-Projects/tree/master/ex4')">
+                      View in Github
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
+            </a>
+          </div>
+        <!-- project6 -->
+        <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="img/portfolio/thumbnails/Book Store.png">
             <img class="img-fluid Gallery" src="img/portfolio/thumbnails/Book Store.png" alt="">
             <div class="portfolio-box-caption Gallery">
               <div class="portfolio-box-caption-content">
                 <div class="project-category text-center p-4">
-                  Book Store : A Project Based On React & css & fetch from Json Data. search for your Book.
+                  Book Store : A Project Based On React & css & fetch from Json Data. as user you can see Books or Search for specific one withe author name.
                 </div>
                 <div class="project-name">
                   <div onclick="openLink('https://github.com/MoeAlsayed/Book-APP')">
                     View in Github
                   </div>
-                  <div onclick="openLink('https://search-for-book.herokuapp.com')">
+                  <div onclick="window.open('https://search-for-book.herokuapp.com')">
                     View Online
                   </div>
                 </div>
@@ -336,6 +329,46 @@
             </div>
           </a>
         </div>
+        <!-- project7 -->
+        <div class="col-lg-3 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/thumbnails/appLoads.png">
+              <img class="img-fluid Gallery" src="img/portfolio/thumbnails/appLoads.png" alt="">
+              <div class="portfolio-box-caption Gallery">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-center p-4">
+  
+                    Podcast product desgin : A Project Based On React & Reactstrap & Scss. Podcast Dashboard 
+                  </div>
+                  <div class="project-name">
+                    <div onclick="openLink('https://github.com/MoeAlsayed/exerciseFullstack-')">
+                      View in Github
+                    </div>
+                    <div onclick="window.open('https://fullstak-development.herokuapp.com/')">
+                      View Online
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- project8 -->
+          <div class="col-lg-3 col-sm-6">
+              <a class="portfolio-box" href="img/portfolio/thumbnails/My ReactTodoApp.png">
+                <img class="img-fluid Gallery" src="img/portfolio/thumbnails/My ReactTodoApp.png" alt="">
+                <div class="portfolio-box-caption Gallery">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-center p-4">
+                        ToDo List app: A Project-Based On React & CSS as a user you can create your To Do List with Due date the Priority for each one, and you can edit the card or Delete and Mark it as Done, and know.
+                    </div>
+                    <div class="project-name">
+                      <div onclick="openLink('https://github.com/MoeAlsayed/ToDo-List')">
+                        View in Github
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
       </div>
     </div>
   </section>
